@@ -1,0 +1,13 @@
+{
+    "request": {
+        "urlPath": "/analytics",
+        "method": "GET"
+    },
+    "response": {
+        "status": 200,
+        "bodyFileName": "analytics.json",
+        "headers": {
+            "Content-Type": "application/json"
+        }
+    }
+}

@@ -1,0 +1,257 @@
+{
+  "dateRange": {
+    "startDate": "2023-05-01",
+    "endDate": "2023-05-31"
+  },
+  "analyticsData": [
+    {
+      "date": "2023-05-01",
+      "totalVisitors": 1200,
+      "totalPageViews": 2800,
+      "bounceRate": 0.28,
+      "conversionRate": 0.09,
+      "topCountries": [
+        {
+          "country": "United States",
+          "visitors": 600,
+          "pageViews": 1300
+        },
+        {
+          "country": "United Kingdom",
+          "visitors": 350,
+          "pageViews": 700
+        },
+        {
+          "country": "Canada",
+          "visitors": 180,
+          "pageViews": 400
+        },
+        {
+          "country": "Germany",
+          "visitors": 120,
+          "pageViews": 250
+        },
+        {
+          "country": "France",
+          "visitors": 100,
+          "pageViews": 200
+        }
+      ],
+      "popularPages": [
+        {
+          "page": "/home",
+          "visitors": 700,
+          "exitRate": 0.22,
+          "averageTimeSpent": 61.2
+        },
+        {
+          "page": "/products",
+          "visitors": 500,
+          "exitRate": 0.18,
+          "averageTimeSpent": 72.4
+        },
+        {
+          "page": "/blog",
+          "visitors": 300,
+          "exitRate": 0.12,
+          "averageTimeSpent": 49.5
+        },
+        {
+          "page": "/contact",
+          "visitors": 150,
+          "exitRate": 0.07,
+          "averageTimeSpent": 37.8
+        }
+      ],
+      "devices": {
+        "desktop": 1000,
+        "mobile": 150,
+        "tablet": 50
+      },
+      "referralSources": [
+        {
+          "source": "Direct",
+          "visitors": 700
+        },
+        {
+          "source": "Organic Search",
+          "visitors": 300
+        },
+        {
+          "source": "Social Media",
+          "visitors": 200
+        },
+        {
+          "source": "Referral",
+          "visitors": 150
+        }
+      ]
+    },
+    {
+      "date": "2023-05-02",
+      "totalVisitors": 1300,
+      "totalPageViews": 3200,
+      "bounceRate": 0.26,
+      "conversionRate": 0.11,
+      "topCountries": [
+        {
+          "country": "United States",
+          "visitors": 700,
+          "pageViews": 1500
+        },
+        {
+          "country": "United Kingdom",
+          "visitors": 400,
+          "pageViews": 800
+        },
+        {
+          "country": "Canada",
+          "visitors": 200,
+          "pageViews": 500
+        },
+        {
+          "country": "Germany",
+          "visitors": 150,
+          "pageViews": 300
+        },
+        {
+          "country": "France",
+          "visitors": 100,
+          "pageViews": 200
+        }
+      ],
+      "popularPages": [
+        {
+          "page": "/home",
+          "visitors": 800,
+          "exitRate": 0.2,
+          "averageTimeSpent": 65.4
+        },
+        {
+          "page": "/products",
+          "visitors": 600,
+          "exitRate": 0.15,
+          "averageTimeSpent": 78.9
+        },
+        {
+          "page": "/blog",
+          "visitors": 400,
+          "exitRate": 0.1,
+          "averageTimeSpent": 45.6
+        },
+        {
+          "page": "/contact",
+          "visitors": 200,
+          "exitRate": 0.05,
+          "averageTimeSpent": 32.1
+        }
+      ],
+      "devices": {
+        "desktop": 1200,
+        "mobile": 200,
+        "tablet": 100
+      },
+      "referralSources": [
+        {
+          "source": "Direct",
+          "visitors": 800
+        },
+        {
+          "source": "Organic Search",
+          "visitors": 400
+        },
+        {
+          "source": "Social Media",
+          "visitors": 300
+        },
+        {
+          "source": "Referral",
+          "visitors": 200
+        }
+      ]
+    },
+    {
+      "date": "2023-05-03",
+      "totalVisitors": 1100,
+      "totalPageViews": 2600,
+      "bounceRate": 0.29,
+      "conversionRate": 0.08,
+      "topCountries": [
+        {
+          "country": "United States",
+          "visitors": 550,
+          "pageViews": 1200
+        },
+        {
+          "country": "United Kingdom",
+          "visitors": 300,
+          "pageViews": 600
+        },
+        {
+          "country": "Canada",
+          "visitors": 160,
+          "pageViews": 350
+        },
+        {
+          "country": "Germany",
+          "visitors": 110,
+          "pageViews": 230
+        },
+        {
+          "country": "France",
+          "visitors": 80,
+          "pageViews": 180
+        }
+      ],
+      "popularPages": [
+        {
+          "page": "/home",
+          "visitors": 650,
+          "exitRate": 0.24,
+          "averageTimeSpent": 59.8
+        },
+        {
+          "page": "/products",
+          "visitors": 450,
+          "exitRate": 0.19,
+          "averageTimeSpent": 71.2
+        },
+        {
+          "page": "/blog",
+          "visitors": 250,
+          "exitRate": 0.13,
+          "averageTimeSpent": 47.9
+        },
+        {
+          "page": "/contact",
+          "visitors": 120,
+          "exitRate": 0.08,
+          "averageTimeSpent": 35.4
+        }
+      ],
+      "devices": {
+        "desktop": 950,
+        "mobile": 100,
+        "tablet": 50
+      },
+      "referralSources": [
+        {
+          "source": "Direct",
+          "visitors": 600
+        },
+        {
+          "source": "Organic Search",
+          "visitors": 250
+        },
+        {
+          "source": "Social Media",
+          "visitors": 150
+        },
+        {
+          "source": "Referral",
+          "visitors": 100
+        }
+      ]
+    }
+  ]
+}

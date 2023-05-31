@@ -1,0 +1,13 @@
+FROM adoptopenjdk/openjdk15
+
+WORKDIR /app
+
+COPY ./wiremock-jre8-standalone-2.35.0.jar wiremock-standalone.jar
+COPY ./runwiremock.sh runwiremock.sh
+RUN chmod +x runwiremock.sh
+COPY __files __files
+COPY mappings mappings
+
+EXPOSE 8080
+
+CMD ["./runwiremock.sh"]
