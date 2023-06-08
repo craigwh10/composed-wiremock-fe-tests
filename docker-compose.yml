@@ -7,9 +7,35 @@ services:
       dockerfile: dockerfile
     ports:
       - 8080:8080
-  # app:
-  #   build:
-  #     context: ./
-  #     dockerfile: dockerfile
-  #   ports:
-  #     - 3000:3000
+    networks:
+      - default1
+
+  analytics_app:
+    build:
+      context: ./
+      dockerfile: dockerfile
+    depends_on:
+      - mocks
+    environment:
+      - ANALYTICS_API_URL=http://mocks:8080
+    ports:
+      - 3000:3000
+    networks:
+      - default1
+
+  test:
+    build:
+      context: ./
+      dockerfile: dockerfile.tests
+    volumes:
+      - './tests/screenshots:/app/screenshots'
+    depends_on:
+      - mocks
+      - analytics_app
+    environment:
+      - URL_TO_TEST=http://analytics_app:3000
+    networks:
+      - default1
+
+networks:
+  default1:

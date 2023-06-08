@@ -1,4 +1,4 @@
-import { wrapper } from "./store";
+import { wrapper } from "../store/index";
 import { Provider } from "react-redux";
 
 function App({ Component, ...rest }) {

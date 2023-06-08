@@ -31,7 +31,7 @@ export const analyticsSlice = createSlice({
         })
         .addCase(fetchAnalyticsData.rejected, (state, action) => {
             state.loading = false;
-            state.error = action.payload.message;
+            state.error = action.payload;
         })
         .addCase(HYDRATE, (state, action) => {
             return {

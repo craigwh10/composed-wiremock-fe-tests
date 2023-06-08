@@ -1,0 +1,16 @@
+FROM zenika/alpine-chrome:with-puppeteer
+LABEL authors="craigwhite"
+
+USER root
+# install node dependencies to run test suite
+RUN apk add --no-cache tini make gcc g++ python3 git nodejs npm yarn
+WORKDIR /app
+COPY ./tests/run.mjs ./package.json ./package-lock.json ./tests/run.sh ./
+
+RUN npm install
+
+RUN chmod +x ./run.sh
+
+RUN mkdir screenshots
+
+ENTRYPOINT ["sh", "./run.sh"]

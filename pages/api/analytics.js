@@ -1,10 +1,19 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-
 export default async function handler(_req, res) {
-  const response = await fetch('http://localhost:8080/analytics', {
-    method: 'GET'
-  })
+  try {
+    const response = await fetch(`${process.env.ANALYTICS_API_URL}/analytics`, {
+      method: 'GET'
+    })
 
-  const data = await response.json();
-  res.status(200).json(data);
+    if (!response) {
+      res.status(400).send({error: 'No data'});
+      return;
+    }
+
+    const data = await response.json();
+    res.status(200).json(data);
+  } catch (err) {
+
+    res.status(500).json({error: err.message});
+  }
+
 }

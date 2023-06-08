@@ -1,10 +1,15 @@
 import Head from 'next/head'
-import { wrapper } from './store'
-import { fetchAnalyticsData } from './store/reducer';
+import { wrapper } from '../store/index'
+import { fetchAnalyticsData } from '@/store/reducer';
 import { useSelector } from 'react-redux';
+import { ErrorView } from "@/modules/ErrorView";
 
 export default function Home() {
-  const { data } = useSelector((data) => data.analytics);
+  const { data, error } = useSelector((data) => data.analytics);
+
+  if (error) {
+      return <ErrorView message={error.message} />
+  }
 
   return (
     <>
@@ -14,8 +19,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main>
-        <h2>My Dashboard</h2>
-        <h1>{data?.analyticsData.length} days of data</h1>
+        <h2 className="title">My Dashboard</h2>
+        <h1>{data?.analyticsData ? data.analyticsData.length : '0'} days of data</h1>
       </main>
     </>
   )
@@ -28,6 +33,6 @@ export const getServerSideProps = wrapper.getServerSideProps((store) => async ()
   await dispatch(fetchAnalyticsData());
 
   return {
-    props: {}
+      props: {}
   }
 })
